@@ -1,0 +1,11 @@
+.header-wrapper .header-brand {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.header-wrapper .video-bg {
+  background-color: rgba(0, 0, 0, 0.24);
+  height: inherit;
+  width: inherit;
+}
+/*# sourceMappingURL=style.css.map */

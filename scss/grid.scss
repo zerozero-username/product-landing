@@ -1,0 +1,63 @@
+@mixin position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin centralize {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+html,
+body,
+div,
+article,
+header,
+nav,
+ul,
+li,
+a,
+p,
+form,
+section,
+input,
+h1,
+h2,
+h3 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: inline-flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.header-wrapper {
+    @include position-absolute;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+
+    .header-brand {
+        @include position-absolute;
+        @include centralize;
+        z-index: 2;
+    }
+
+    .video-bg {
+        @include position-absolute;
+        z-index: 0;
+    }
+}
+
