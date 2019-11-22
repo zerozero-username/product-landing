@@ -20,18 +20,9 @@ h3 {
 }
 
 body {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
@@ -46,6 +37,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  margin-bottom: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
   width: 100%;
   z-index: 1;
@@ -57,6 +53,9 @@ body {
   left: 0;
   -ms-flex-line-pack: center;
       align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -69,5 +68,33 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.header-wrapper .side-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4em;
+  top: 50%;
+  left: 30%;
 }
 /*# sourceMappingURL=grid.css.map */

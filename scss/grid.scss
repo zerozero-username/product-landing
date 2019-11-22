@@ -4,8 +4,15 @@
     left: 0;
 }
 
+@mixin position-relative {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @mixin centralize {
     align-content: center;
+    align-self: center;
     justify-content: center;
     text-align: center;
 }
@@ -33,10 +40,7 @@ h3 {
 }
 
 body {
-    display: inline-flex;
-    flex-basis: auto;
-    flex-direction: column;
-    flex-grow: 1;
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -45,6 +49,8 @@ body {
 
 .header-wrapper {
     @include position-absolute;
+    margin-bottom: 2em;
+    flex-direction: column;
     height: auto;
     width: 100%;
     z-index: 1;
@@ -59,5 +65,17 @@ body {
         @include position-absolute;
         z-index: 0;
     }
+
+    .side-navbar {
+        @include position-relative;
+    }
 }
 
+.product-info {
+    @include position-relative;
+    @include centralize;
+    flex-direction: column;
+    margin-top: 4em;
+    top: 50%;
+    left: 25% + 5%;
+}
