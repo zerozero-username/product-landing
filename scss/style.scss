@@ -1,15 +1,32 @@
+//quick color variables
+$bg-color: #ffffff;
+$fg-color: #31343d;
+$accent-1: #8f80fd;
+$accent-2: #92ccce;
+$accent-3: #445877;
+// hover
+@mixin hover {
+	transition: ease-out 0.45s;
+
+	&:hover {
+		transition: ease-in 0.45s;
+		color: $accent-1;
+	}
+}
+//start
 *,
 *::after,
 *::before {
 	left: 0;
-    font-family: monospace;
-    letter-spacing: 0.2rem;
+	font-family: monospace;
+	letter-spacing: 0.2rem;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 h1 {
 	font-size: 10rem;
+	color: $accent-3;
 }
 h2 {
 	font-size: 3rem;
@@ -19,60 +36,97 @@ h3 {
 }
 p {
 	font-size: 1.42rem;
+	text-indent: 2rem;
+	opacity: 70%;
 }
 
-.row {
-	.header {
-		align-content: center;
-		justify-content: center;
-		background-color: black;
-		position: absolute;
-		padding: 0;
-		top: -0.5%;
-		z-index: 0;
+.container {
+	
 
-		.nav-bar {
-			background: rgba(209, 87, 107, 0.726);
-			position: fixed;
-			left: -0.4%;
-			top: -0.4%;
-			padding: 0.4em;
-			width: 100%;
-			z-index: 2;
+	.row {
+		color: $fg-color;
 
-			ul li {
-				display: inline-flex;
-				flex-flow: row wrap;
+		.header {
+			align-content: center;
+			justify-content: center;
+			background-color: $fg-color;
+			position: absolute;
+			padding: 0;
+			top: -0.5%;
+			z-index: 0;
 
-				.nav-link {
-					font-weight: bolder;
-					font-size: 1.35rem;
-					margin: 0 1.42rem 0 1.42rem;
+			.nav-bar {
+				background: $fg-color;
+				position: fixed;
+				left: -0.4%;
+				top: -0.4%;
+				padding: 0.4em 0 0 0;
+				width: 100%;
+				z-index: 2;
+
+				ul li {
+					display: inline-flex;
+					flex-flow: row wrap;
+
+					.nav-link {
+						@include hover();
+
+						font-weight: bolder;
+						font-size: 1.35rem;
+						margin: 0 1.42rem 0 3rem;
+						color: $bg-color;
+						z-index: 3;
+					}
 				}
+			}
+
+			.header-brand {
+				position: relative;
+				align-content: center;
+				align-items: center;
+				justify-content: center;
+				justify-items: center;
+				color: transparent;
+				height: auto;
+				width: 100%;
+				top: 2em;
+				z-index: 1;
+
+				img {
+					min-width: 12em;
+					width: 24em;
+					max-width: 72em;
+				}
+
+				.item {
+					text-align: center;
+					color: #000;
+					z-index: 1;
+				}
+			}
+
+			.video-bg {
+				position: absolute;
+				background: white;
+				height: auto;
+				width: 100%;
+				top: -1vh;
+				z-index: 0;
 			}
 		}
 
-		.header-brand {
-			position: absolute;
-			color: white;
-			top: 5.5vh;
-			z-index: 1;
-		}
+		.post {
+			position: relative;
+			justify-content: baseline;
+			justify-items: baseline;
+			top: 50%;
+			z-index: -1;
 
-		.video-bg {
-			position: absolute;
-			background: brown;
-			height: 32vh;
-			width: 100%;
-			z-index: 0;
+			.item {
+				margin-top: 15rem;
+				padding: 4rem 0 4rem 0;
+				border: solid 0.2rem black;
+			}
 		}
-	}
-
-	.post {
-		position: relative;
-		justify-content: space-evenly;
-		justify-items: baseline;
-		margin-top: 2em;
-		top: 50%;
 	}
 }

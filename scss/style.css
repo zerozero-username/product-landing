@@ -10,6 +10,7 @@
 
 h1 {
   font-size: 10rem;
+  color: #445877;
 }
 
 h2 {
@@ -22,32 +23,38 @@ h3 {
 
 p {
   font-size: 1.42rem;
+  text-indent: 2rem;
+  opacity: 70%;
 }
 
-.row .header {
+.container .row {
+  color: #31343d;
+}
+
+.container .row .header {
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: #31343d;
   position: absolute;
   padding: 0;
   top: -0.5%;
   z-index: 0;
 }
 
-.row .header .nav-bar {
-  background: rgba(209, 87, 107, 0.726);
+.container .row .header .nav-bar {
+  background: #31343d;
   position: fixed;
   left: -0.4%;
   top: -0.4%;
-  padding: 0.4em;
+  padding: 0.4em 0 0 0;
   width: 100%;
   z-index: 2;
 }
 
-.row .header .nav-bar ul li {
+.container .row .header .nav-bar ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -57,34 +64,74 @@ p {
           flex-flow: row wrap;
 }
 
-.row .header .nav-bar ul li .nav-link {
+.container .row .header .nav-bar ul li .nav-link {
+  -webkit-transition: ease-out 0.45s;
+  transition: ease-out 0.45s;
   font-weight: bolder;
   font-size: 1.35rem;
-  margin: 0 1.42rem 0 1.42rem;
+  margin: 0 1.42rem 0 3rem;
+  color: #ffffff;
+  z-index: 3;
 }
 
-.row .header .header-brand {
-  position: absolute;
-  color: white;
-  top: 5.5vh;
+.container .row .header .nav-bar ul li .nav-link:hover {
+  -webkit-transition: ease-in 0.45s;
+  transition: ease-in 0.45s;
+  color: #8f80fd;
+}
+
+.container .row .header .header-brand {
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  color: transparent;
+  height: auto;
+  width: 100%;
+  top: 2em;
   z-index: 1;
 }
 
-.row .header .video-bg {
+.container .row .header .header-brand img {
+  min-width: 12em;
+  width: 24em;
+  max-width: 72em;
+}
+
+.container .row .header .header-brand .item {
+  text-align: center;
+  color: #000;
+  z-index: 1;
+}
+
+.container .row .header .video-bg {
   position: absolute;
-  background: brown;
-  height: 32vh;
+  background: white;
+  height: auto;
   width: 100%;
+  top: -1vh;
   z-index: 0;
 }
 
-.row .post {
+.container .row .post {
   position: relative;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   justify-items: baseline;
-  margin-top: 2em;
   top: 50%;
+  z-index: -1;
+}
+
+.container .row .post .item {
+  margin-top: 15rem;
+  padding: 4rem 0 4rem 0;
+  border: solid 0.2rem black;
 }
 /*# sourceMappingURL=style.css.map */
