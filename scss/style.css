@@ -29,6 +29,10 @@ p {
   opacity: 70%;
 }
 
+.container {
+  overflow-y: hidden;
+}
+
 .container .row {
   color: #31343d;
 }
@@ -49,7 +53,7 @@ p {
 .container .row .header .nav-bar {
   background: #31343d;
   position: fixed;
-  left: -0.4%;
+  left: -0.18%;
   top: -0.4%;
   padding: 0.4em 0 0 0;
   width: 100%;
@@ -96,14 +100,15 @@ p {
   color: transparent;
   height: auto;
   width: 100%;
-  top: 2em;
+  top: 18em;
   z-index: 1;
 }
 
 .container .row .header .header-brand img {
+  image-rendering: optimizeQuality;
   min-width: 12em;
-  width: 24em;
-  max-width: 72em;
+  width: 45em;
+  max-width: 142em;
 }
 
 .container .row .header .header-brand .item {
@@ -114,10 +119,18 @@ p {
 .container .row .header .video-bg {
   position: absolute;
   background: white;
-  height: auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   width: 100%;
   top: -1vh;
   z-index: 0;
+}
+
+.container .row .header .video-bg::after {
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+  opacity: 0;
 }
 
 .container .row .post {
@@ -131,7 +144,7 @@ p {
 }
 
 .container .row .post .item {
-  margin-top: 15rem;
+  margin-top: 24rem;
   padding: 4rem 0 4rem 0;
   background: #bbe7e7;
   border: solid 0.1rem #31343d;

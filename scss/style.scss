@@ -43,7 +43,7 @@ p {
 }
 
 .container {
-	
+	overflow-y: hidden;
 
 	.row {
 		color: $fg-color;
@@ -60,7 +60,7 @@ p {
 			.nav-bar {
 				background: $fg-color;
 				position: fixed;
-				left: -0.4%;
+				left: -0.18%;
 				top: -0.4%;
 				padding: 0.4em 0 0 0;
 				width: 100%;
@@ -91,13 +91,14 @@ p {
 				color: transparent;
 				height: auto;
 				width: 100%;
-				top: 2em;
+				top: 18em;
 				z-index: 1;
 
 				img {
+					image-rendering: optimizeQuality;
 					min-width: 12em;
-					width: 24em;
-					max-width: 72em;
+					width: 45em;
+					max-width: 142em;
 				}
 
 				.item {
@@ -109,10 +110,15 @@ p {
 			.video-bg {
 				position: absolute;
 				background: white;
-				height: auto;
+				height: min-content;
 				width: 100%;
 				top: -1vh;
 				z-index: 0;
+
+				&::after{
+					transition: ease-out 1s;
+					opacity: 0;
+				}
 			}
 		}
 
@@ -124,7 +130,7 @@ p {
 			z-index: -1;
 
 			.item {
-				margin-top: 15rem;
+				margin-top: 24rem;
 				padding: 4rem 0 4rem 0;
 				background: $accent-2;
 				border: solid 0.1rem $fg-color;
