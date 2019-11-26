@@ -2,7 +2,7 @@
 $bg-color: #ffffff;
 $fg-color: #31343d;
 $accent-1: #8f80fd;
-$accent-2: #92ccce;
+$accent-2: #bbe7e7;
 $accent-3: #445877;
 // hover
 @mixin hover {
@@ -30,9 +30,11 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
+	color: $accent-3;
 }
 h3 {
 	font-size: 2rem;
+	color: $accent-1;
 }
 p {
 	font-size: 1.42rem;
@@ -100,7 +102,6 @@ p {
 
 				.item {
 					text-align: center;
-					color: #000;
 					z-index: 1;
 				}
 			}
@@ -125,8 +126,22 @@ p {
 			.item {
 				margin-top: 15rem;
 				padding: 4rem 0 4rem 0;
-				border: solid 0.2rem black;
+				background: $accent-2;
+				border: solid 0.1rem $fg-color;
 			}
 		}
+
+		
+	}
+}
+
+.footer-wrap {
+	background: $fg-color;
+
+	p {
+		color: $accent-2;
+	}
+	a:any-link {
+		color: $accent-1;
 	}
 }

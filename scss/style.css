@@ -15,10 +15,12 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  color: #445877;
 }
 
 h3 {
   font-size: 2rem;
+  color: #8f80fd;
 }
 
 p {
@@ -106,7 +108,6 @@ p {
 
 .container .row .header .header-brand .item {
   text-align: center;
-  color: #000;
   z-index: 1;
 }
 
@@ -132,6 +133,27 @@ p {
 .container .row .post .item {
   margin-top: 15rem;
   padding: 4rem 0 4rem 0;
-  border: solid 0.2rem black;
+  background: #bbe7e7;
+  border: solid 0.1rem #31343d;
+}
+
+.footer-wrap {
+  background: #31343d;
+}
+
+.footer-wrap p {
+  color: #bbe7e7;
+}
+
+.footer-wrap a:-webkit-any-link {
+  color: #8f80fd;
+}
+
+.footer-wrap a:-moz-any-link {
+  color: #8f80fd;
+}
+
+.footer-wrap a:any-link {
+  color: #8f80fd;
 }
 /*# sourceMappingURL=style.css.map */
