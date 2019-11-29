@@ -106,6 +106,8 @@ p {
 
 .container .row .header .header-brand img {
   image-rendering: optimizeQuality;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
   min-width: 12em;
   width: 45em;
   max-width: 142em;
@@ -122,6 +124,7 @@ p {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  margin-bottom: 10rem;
   width: 100%;
   top: -1vh;
   z-index: 0;
@@ -135,14 +138,14 @@ p {
 
 .container .row .header .video-overlay {
   position: absolute;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   top: -1vh;
-  z-index: 2;
+  z-index: 9;
   background: #8f80fd;
-  opacity: 40%;
+  opacity: 90%;
 }
 
 .container .row .post {
@@ -151,15 +154,38 @@ p {
       -ms-flex-pack: baseline;
           justify-content: baseline;
   justify-items: baseline;
-  top: 50%;
+  top: 30em;
   z-index: -1;
 }
 
+.container .row .post:first-child {
+  margin-top: 20rem;
+}
+
+.container .row .post:last-child {
+  margin-bottom: 34rem;
+}
+
 .container .row .post .item {
-  margin-top: 24rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
   padding: 4rem 0 4rem 0;
   background: #bbe7e7;
   border: solid 0.1rem #31343d;
+}
+
+.container .row .post .item .video-product {
+  width: 20em;
+  height: 20em;
+  background: #31343d;
+  border: solid 0.3rem #31343d;
+  border-radius: 0;
+}
+
+.container .row .post .item img {
+  width: 15em;
+  height: 15em;
+  border-radius: 99em;
 }
 
 .footer-wrap {

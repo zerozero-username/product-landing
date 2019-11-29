@@ -96,6 +96,7 @@ p {
 
 				img {
 					image-rendering: optimizeQuality;
+					filter: invert(100%);
 					min-width: 12em;
 					width: 45em;
 					max-width: 142em;
@@ -111,6 +112,7 @@ p {
 				position: absolute;
 				background: white;
 				height: min-content;
+				margin-bottom: 10rem;
 				width: 100%;
 				top: -1vh;
 				z-index: 0;
@@ -123,13 +125,12 @@ p {
 
 			.video-overlay {
 				position: absolute;
-
-				height: min-content;
+				height: max-content;
 				width: 100%;
 				top: -1vh;
-				z-index: 2;
+				z-index: 9;
 				background: $accent-1;
-				opacity: 40%;
+				opacity: 90%;
 			}
 		}
 
@@ -137,15 +138,40 @@ p {
 			position: relative;
 			justify-content: baseline;
 			justify-items: baseline;
-			top: 50%;
+			top: 30em;
 			z-index: -1;
 
+			&:first-child {
+				margin-top: 20rem;
+			}
+
+			&:last-child {
+				margin-bottom: 34rem;
+			}
+
 			.item {
-				margin-top: 24rem;
+				margin-top: 4rem;
+				margin-bottom: 5rem;
 				padding: 4rem 0 4rem 0;
 				background: $accent-2;
 				border: solid 0.1rem $fg-color;
+
+				.video-product {
+					width: 20em;
+					height: 20em;
+					background: $fg-color;
+					border: solid 0.3rem $fg-color;
+					border-radius:0;
+				}
+
+				img {
+					width: 15em;
+					height: 15em;
+					border-radius: 99em;
+				}
+				
 			}
+
 		}
 
 		
