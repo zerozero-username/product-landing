@@ -95,6 +95,7 @@ p {
 				z-index: 1;
 
 				img {
+					margin-top: -14vh;
 					image-rendering: optimizeQuality;
 					filter: invert(100%);
 					min-width: 12em;
@@ -154,19 +155,20 @@ p {
 				margin-bottom: 5rem;
 				padding: 4rem 0 4rem 0;
 				background: $accent-2;
-				border: solid 0.1rem $fg-color;
+				border: 0;
 
 				.video-product {
-					width: 20em;
-					height: 20em;
-					background: $fg-color;
-					border: solid 0.3rem $fg-color;
+					width: 24em;
+					height: 24em;
+					border: 0;
 					border-radius:0;
 				}
 
 				img {
-					width: 15em;
-					height: 15em;
+					margin-top: 1em;
+					margin-bottom: 1em;
+					width: 10em;
+					height: 10em;
 					border-radius: 99em;
 				}
 				
