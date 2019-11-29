@@ -120,6 +120,17 @@ p {
 					opacity: 0;
 				}
 			}
+
+			.video-overlay {
+				position: absolute;
+
+				height: min-content;
+				width: 100%;
+				top: -1vh;
+				z-index: 2;
+				background: $accent-1;
+				opacity: 40%;
+			}
 		}
 
 		.post {

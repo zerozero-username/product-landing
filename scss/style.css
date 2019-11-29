@@ -133,6 +133,18 @@ p {
   opacity: 0;
 }
 
+.container .row .header .video-overlay {
+  position: absolute;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  top: -1vh;
+  z-index: 2;
+  background: #8f80fd;
+  opacity: 40%;
+}
+
 .container .row .post {
   position: relative;
   -webkit-box-pack: baseline;
