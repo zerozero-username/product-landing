@@ -160,7 +160,7 @@ p {
 }
 
 .container .row .post:first-child {
-  margin-top: 20rem;
+  margin-top: 75rem;
 }
 
 .container .row .post:last-child {
@@ -183,6 +183,9 @@ p {
 }
 
 .container .row .post .item img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
   width: 10em;

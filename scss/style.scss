@@ -143,7 +143,7 @@ p {
 			z-index: -1;
 
 			&:first-child {
-				margin-top: 20rem;
+				margin-top: 75rem;
 			}
 
 			&:last-child {
@@ -165,6 +165,7 @@ p {
 				}
 
 				img {
+					justify-content: center;
 					margin-top: 1em;
 					margin-bottom: 1em;
 					width: 10em;
