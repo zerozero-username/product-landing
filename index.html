@@ -1,156 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="zerozero_username" />
-    <meta name="description" content="freecodecamp project" />
-    <meta name="content" content="product landing page" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="scss/grid.css" />
-    <link rel="stylesheet" href="scss/style.css" />
-    <link rel="stylesheet" href="scss/product.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="row">
-        <header id="header" class="col header">
-          <nav id="nav-bar" class="item nav-bar">
-            <ul>
-              <li>
-                <a class="nav-link" href="#product-info">why you can trust us</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#product-features">our product</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#product-newsletter"
-                  >get our newsletter!</a
-                >
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="zerozero_username" />
+  <meta name="description" content="freecodecamp project" />
+  <meta name="content" content="product landing page" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="scss/grid.css" />
+  <link rel="stylesheet" href="scss/style.css" />
+</head>
 
-          <div class="col header-brand">
-            <div class="item">
-              <img src="logo/logo.png" id="header-img" />
-              <h4>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
-            </div>
-          </div>
+<body>
+  <div class="container">
+    <div class="cell-header">
+      <header id="header">
+        <nav id="nav-bar" class="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#product-info">why you can trust us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#product-features">our product</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#product-newsletter">get our newsletter!</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <img src="logo/logo.png" id="header-img"  class="brand"/>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+    
+        <video autoplay muted="video-bg video-overlay" id="video-bg" class="video-bg">
+          <source src="videos/Transition - 23324.mp4" />
+        </video>
+    
+      </header>
+    </div> 
 
-          <video autoplay muted="video-bg video-overlay" id="video-bg" class="video-bg">
-            <source src="videos/Transition - 23324.mp4" />
-          </video>
-          
-        </header>
-        
-      </div>
+    <div class="cell-post-1">
+      <article id="product-info" class="post">
+        <h2>Why you should use our products:</h2>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis ullamcorper felis ut tempus.
+            Mauris tincidunt lectus a tortor ultricies, vel malesuada mi finibus. Proin et ligula ac ligula aliquet dapibus.
+            Duis sed purus a diam molestie finibus sed eu orci.
+            Suspendisse in augue commodo est iaculis tempus.
+            In eu tempor felis, vitae euismod nisl. Sed finibus laoreet odio sed mattis.
+            Pellentesque porttitor odio in est ornare, et consequat ligula varius.
+          </p>
+          <p>
+            <video id="video" class="video-product" autoplay muted>
+              <source src="videos/Chocolate - 12669.mp4" />
+            </video>
+          </p>
+        </section>
+      </article>
+    </div> 
+    
+   <div class="cell-post-2">
+    <article id="product-features" class="post">
+      <section>
+        <h2>Why you can trust us</h2>
+        <h3>
+          Lorem ipsum dolor sit.
+        </h3>
+        <p>
+          Curabitur condimentum ultrices malesuada. Fusce euismod lorem vitae dignissim tempus. Pellentesque mattis
+          sapien.
+          <br>
+          <img src="img/egg-944495_1920.jpg">
+          <img src="img/kettle-2178442_1920.jpg">
+          <img src="img/walnuts-3844990_1920.jpg">
+          <br>
+        </p>
+      </section>
+  
+      <section>
+        <ul>
+          <li>
+            <h3>All our products are natural</h3>
+            <p>Nulla facilisi. Quisque malesuada consectetur diam ac mollis. Etiam interdum metus non facilisis eleifend.
+              Quisque hendrerit faucibus accumsan. Nulla ut nisi. </p>
+          </li>
+          <li>
+            <h3>Home made</h3>
+            <p>Suspendisse sit amet gravida quam. Curabitur porttitor a magna eu viverra. Phasellus mattis pharetra quam,
+              tincidunt fermentum est blandit non. In. </p>
+          </li>
+          <li>
+            <h3>Fresh and healthy</h3>
+            <p>Suspendisse molestie felis sit amet lacus ultrices, nec faucibus metus suscipit. Suspendisse tincidunt
+              iaculis diam pulvinar condimentum. Etiam eleifend euismod feugiat. </p>
+          </li>
+        </ul>
+      </section>
+  
+    </article>
+   </div> 
+    
+  <div class="cell-post-3">
+    <article id="product-newsletter" class="post">
+      <h2>
+        Want to know more? <br>Sign up and get recipes, tips and much more!
+      </h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" id="email" placeholder="Insert your email here!" />
+  
+        <input type="submit" name="submit" id="submit" value="Sign Up!" />
+      </form>
+    </article>
+  </div>
+    
+  <div class="cell-footer">
+    <footer>
+      <a>created by <a href="https://twitter.com/zerozero_user">zerozero_username</a></a>
+    </footer>
+    
+  </div>
+    
+  </div>
 
-      <div class="row">
-        <div class="col post">
-          <div class="item">
-            <article id="product-info">
-              <h2>Why you should use our products:</h2>
-              <section>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis ullamcorper felis ut tempus.
-                    Mauris tincidunt lectus a tortor ultricies, vel malesuada mi finibus. Proin et ligula ac ligula aliquet dapibus. Duis sed purus a diam molestie finibus sed eu orci. 
-                    Suspendisse in augue commodo est iaculis tempus. 
-                    In eu tempor felis, vitae euismod nisl. Sed finibus laoreet odio sed mattis. 
-                    Pellentesque porttitor odio in est ornare, et consequat ligula varius. 
-                </p>
-                <p>
-                  <video id="video" class="video-product" autoplay muted>
-                    <source src="videos/Chocolate - 12669.mp4"/>
-                  </video>
-                </p>
-              </section>
-            </article>
-          </div>
-        </div>
-        <div class="col post">
-          <div class="item">
-            <article id="product-features">
-              <section>
-                <h2>Why you can trust us</h2>
-                <h3>
-                    Lorem ipsum dolor sit. 
-                  </h3>
-                <p>
-                    Curabitur condimentum ultrices malesuada. Fusce euismod lorem vitae dignissim tempus. Pellentesque mattis sapien. 
-                    <br>
-                    <img src="img/egg-944495_1920.jpg">
-                    <img src="img/kettle-2178442_1920.jpg">
-                    <img src="img/walnuts-3844990_1920.jpg">
-                    <br>
-                  </p>
-              </section>
 
-              <section>
-                <ul>
-                  <li>
-                    <h3>All our products are natural</h3>
-                    <p>Nulla facilisi. Quisque malesuada consectetur diam ac mollis. Etiam interdum metus non facilisis eleifend. Quisque hendrerit faucibus accumsan. Nulla ut nisi. </p>
-                  </li>
-                  <li>
-                    <h3>Home made</h3>
-                    <p>Suspendisse sit amet gravida quam. Curabitur porttitor a magna eu viverra. Phasellus mattis pharetra quam, tincidunt fermentum est blandit non. In. </p>
-                  </li>
-                  <li>
-                    <h3>Fresh and healthy</h3>
-                    <p>Suspendisse molestie felis sit amet lacus ultrices, nec faucibus metus suscipit. Suspendisse tincidunt iaculis diam pulvinar condimentum. Etiam eleifend euismod feugiat. </p>
-                  </li>
-                </ul>
-              </section>
 
-              <section>
-                <div></div>
-              </section>
-            </article>
-          </div>
-        </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/video-control.js"></script>
+</body>
 
-        <div class="col post">
-          <div class="item">
-            <article id="product-newsletter" class="newsletter">
-              <h2>
-                Want to know more? <br>Sign up and get recipes, tips and much more!
-              </h2>
-
-              <form
-                id="form"
-                action="https://www.freecodecamp.com/email-submit"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Insert your email here!"
-                />
-
-                <input
-                  type="submit"
-                  name="submit"
-                  id="submit"
-                  value="Sign Up!"
-                />
-              </form>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <div class="row footer-wrap">
-        <div class="col">
-          <p>created by <a href="https://twitter.com/zerozero_user">zerozero_username</a></p>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="js/video-control.js"></script>
-  </body>
 </html>
