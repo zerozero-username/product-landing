@@ -1,37 +1,90 @@
-.cell-header {
-	nav {
-		background: black;
+// colors
+$bg-color: #eddfb0;
+$accent-a: #654f3b;
+$accent-b: #9c976a;
+$accent-c: #c57b57;
 
-		a {
+// mixins
+@mixin hover {
+	transition: ease-in 0.6s;
+
+	&:hover {
+		transition: ease-in-out 0.6s;
+	}
+}
+
+// start
+body {
+	background: $bg-color;
+}
+
+h2,
+h3 {
+	color: $accent-c;
+}
+
+p {
+	color: $accent-a;
+}
+
+.cell-header {
+
+	.nav-bar {
+		background: linear-gradient(to left, $bg-color 5%, $accent-b 95%);
+		opacity: 90%;
+
+		ul li {
 			font-weight: bolder;
 
-			&:hover, &:active {
-				color: gold;
+			a {
+				font-size: 1.25rem;
+				color: $accent-a;
+
+				&:hover,
+				&:active {
+					color: $accent-c;
+				}
 			}
 		}
+	}
+
+	.brand {
+		filter: invert(75%) sepia(90%) hue-rotate(10deg);
+	}
+
+	h4 {
+		color: $bg-color;
+	}
+
+	.video-bg {
+		filter: contrast(40%) sepia(20%) grayscale(40%);
 	}
 }
 
 .cell-post-1,
 .cell-post-2,
 .cell-post-3 {
-	border: dashed 0.15rem black;
+	border: dashed 0.17rem $accent-b;
+	border-radius: 1rem;
 }
 
 .cell-post-1 {
 	video {
-        object-fit: cover;
-        background: black;
+		object-fit: cover;
+		border: solid 0.1rem $accent-b;
+		box-shadow: 0 0 0 0.4rem $bg-color, 0 0 0 0.5rem $accent-b;
 		border-radius: 99em;
-        overflow: hidden;
-        
+		overflow: hidden;
 	}
 }
 
 .cell-post-2 {
-	img {
-		border: solid 0.32rem white;
-		box-shadow: 0 0 0 0.1rem black;
+	p {
+		img {
+			border: solid 0.32rem $bg-color;
+			box-shadow: 0 0 0 0.1rem $accent-b;
+
+		}
 	}
 }
 
@@ -39,32 +92,41 @@
 	input[type=email] {
 		padding: 0.5rem;
 		margin: 0 1rem 0 1rem;
-		background: black;
-		color: white;
+		background: $accent-a;
+		color: $bg-color;
 		font-weight: bolder;
 	}
 
 	input[type=submit] {
 		padding: 0.4rem;
-		background: white;
-		color: black;
-		border: solid 0.15rem black;
+		background: $bg-color;
+		color: $accent-a;
+		border: solid 0.15rem $accent-a;
 		font-weight: bolder;
 
-		&:hover, &:focus {
-			background: black;
-			color: white;
+		&:hover,
+		&:focus {
+			background: $accent-a;
+			color: $accent-c;
 		}
 	}
 }
 
 .cell-footer {
 	padding: 2rem 0 2rem 0;
-	background: black;
-	color: white;
+	background: $accent-a;
+	color: $bg-color;
 	font-weight: bolder;
 
+	p {
+		color: $bg-color;
+	}
+
 	a {
-		color: white;
+		color: $accent-c;
+
+		&:hover {
+			color: $accent-b;
+		}
 	}
 }

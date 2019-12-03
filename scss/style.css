@@ -1,64 +1,109 @@
-.cell-header nav {
-  background: black;
+body {
+  background: #eddfb0;
 }
 
-.cell-header nav a {
+h2,
+h3 {
+  color: #c57b57;
+}
+
+p {
+  color: #654f3b;
+}
+
+.cell-header .nav-bar {
+  background: -webkit-gradient(linear, right top, left top, color-stop(5%, #eddfb0), color-stop(95%, #9c976a));
+  background: linear-gradient(to left, #eddfb0 5%, #9c976a 95%);
+  opacity: 90%;
+}
+
+.cell-header .nav-bar ul li {
   font-weight: bolder;
 }
 
-.cell-header nav a:hover, .cell-header nav a:active {
-  color: gold;
+.cell-header .nav-bar ul li a {
+  font-size: 1.25rem;
+  color: #654f3b;
+}
+
+.cell-header .nav-bar ul li a:hover, .cell-header .nav-bar ul li a:active {
+  color: #c57b57;
+}
+
+.cell-header .brand {
+  -webkit-filter: invert(75%) sepia(90%) hue-rotate(10deg);
+          filter: invert(75%) sepia(90%) hue-rotate(10deg);
+}
+
+.cell-header h4 {
+  color: #eddfb0;
+}
+
+.cell-header .video-bg {
+  -webkit-filter: contrast(40%) sepia(20%) grayscale(40%);
+          filter: contrast(40%) sepia(20%) grayscale(40%);
 }
 
 .cell-post-1,
 .cell-post-2,
 .cell-post-3 {
-  border: dashed 0.15rem black;
+  border: dashed 0.17rem #9c976a;
+  border-radius: 1rem;
 }
 
 .cell-post-1 video {
   -o-object-fit: cover;
      object-fit: cover;
-  background: black;
+  border: solid 0.1rem #9c976a;
+  -webkit-box-shadow: 0 0 0 0.4rem #eddfb0, 0 0 0 0.5rem #9c976a;
+          box-shadow: 0 0 0 0.4rem #eddfb0, 0 0 0 0.5rem #9c976a;
   border-radius: 99em;
   overflow: hidden;
 }
 
-.cell-post-2 img {
-  border: solid 0.32rem white;
-  -webkit-box-shadow: 0 0 0 0.1rem black;
-          box-shadow: 0 0 0 0.1rem black;
+.cell-post-2 p img {
+  border: solid 0.32rem #eddfb0;
+  -webkit-box-shadow: 0 0 0 0.1rem #9c976a;
+          box-shadow: 0 0 0 0.1rem #9c976a;
 }
 
 .cell-post-3 input[type=email] {
   padding: 0.5rem;
   margin: 0 1rem 0 1rem;
-  background: black;
-  color: white;
+  background: #654f3b;
+  color: #eddfb0;
   font-weight: bolder;
 }
 
 .cell-post-3 input[type=submit] {
   padding: 0.4rem;
-  background: white;
-  color: black;
-  border: solid 0.15rem black;
+  background: #eddfb0;
+  color: #654f3b;
+  border: solid 0.15rem #654f3b;
   font-weight: bolder;
 }
 
 .cell-post-3 input[type=submit]:hover, .cell-post-3 input[type=submit]:focus {
-  background: black;
-  color: white;
+  background: #654f3b;
+  color: #c57b57;
 }
 
 .cell-footer {
   padding: 2rem 0 2rem 0;
-  background: black;
-  color: white;
+  background: #654f3b;
+  color: #eddfb0;
   font-weight: bolder;
 }
 
+.cell-footer p {
+  color: #eddfb0;
+}
+
 .cell-footer a {
-  color: white;
+  color: #c57b57;
+}
+
+.cell-footer a:hover {
+  color: #9c976a;
 }
 /*# sourceMappingURL=style.css.map */

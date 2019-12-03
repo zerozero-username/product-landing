@@ -10,7 +10,8 @@
 }
 
 html {
-  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -29,6 +30,21 @@ h4 {
 p {
   line-height: 4vh;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  p {
+    line-height: 1.75vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  p {
+    line-height: 2vh;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: justify;
+  }
 }
 
 .container {
@@ -52,9 +68,30 @@ p {
 .container .cell-post-1,
 .container .cell-post-2,
 .container .cell-post-3 {
-  margin: 1vh 0 8vh 0;
+  margin: 15vh 0 10vh 0;
   padding: 1vh;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header,
+  .container .cell-post-1,
+  .container .cell-post-2,
+  .container .cell-post-3 {
+    margin: 2vh 0 2vh 0;
+    padding: 4vh;
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-header,
+  .container .cell-post-1,
+  .container .cell-post-2,
+  .container .cell-post-3 {
+    margin: 4vh 0 4vh 0;
+    font-size: 80%;
+  }
 }
 
 .container .cell-post-1,
@@ -77,8 +114,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .container .cell-post-1 article,
@@ -86,6 +123,24 @@ p {
 .container .cell-post-3 article {
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-post-1,
+  .container .cell-post-2,
+  .container .cell-post-3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-post-1,
+  .container .cell-post-2,
+  .container .cell-post-3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .container .cell-header {
@@ -99,7 +154,7 @@ p {
   z-index: 0;
 }
 
-.container .cell-header nav {
+.container .cell-header .nav-bar {
   margin-top: 0;
   padding: 1vh 0 1vh 0;
   position: fixed;
@@ -107,7 +162,7 @@ p {
   z-index: 3;
 }
 
-.container .cell-header nav ul li {
+.container .cell-header .nav-bar ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -117,11 +172,30 @@ p {
           flex-direction: row;
 }
 
-.container .cell-header nav ul li a {
-  color: white;
-  letter-spacing: 0.5vh;
+.container .cell-header .nav-bar ul li a {
+  letter-spacing: 0.36vh;
   margin: 0 2vh 0 2vh;
   outline: 0;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header .nav-bar {
+    width: 100%;
+    left: 0%;
+  }
+  .container .cell-header .nav-bar a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-header .nav-bar {
+    left: 0;
+    width: 100%;
+  }
+  .container .cell-header .nav-bar a {
+    font-size: 0.8rem;
+  }
 }
 
 .container .cell-header h4 {
@@ -130,9 +204,22 @@ p {
   z-index: 2;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header h4 {
+    top: 12vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-header h4 {
+    font-size: 0.6rem;
+    font-weight: bolder;
+  }
+}
+
 .container .cell-header .brand {
   height: auto;
-  left: 11%;
+  left: 50%;
   position: relative;
   top: 50%;
   -webkit-transform: translate(-50%, 70%);
@@ -141,18 +228,28 @@ p {
   z-index: 2;
 }
 
-.container .cell-header .video-bg {
-  height: auto;
-  margin-top: 0;
-  opacity: 70%;
-  position: relative;
-  width: 100%;
-  z-index: 0;
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header .brand {
+    margin-top: -12vh;
+    left: 25%;
+    -webkit-transform: translate(-50%, 97%);
+            transform: translate(-50%, 97%);
+    width: 34vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-header .brand {
+    margin-top: 0;
+    left: 20%;
+    -webkit-transform: translate(-50%, 97%);
+            transform: translate(-50%, 97%);
+    width: 32vh;
+  }
 }
 
 .container .cell-header .video-overlay {
   position: relative;
-  background: white;
   padding-top: -1vh;
   height: 100%;
   width: 100%;
@@ -161,6 +258,29 @@ p {
   -webkit-transform: translate(-50%, -52.85%);
           transform: translate(-50%, -52.85%);
   z-index: 1;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header .video-overlay {
+    margin-top: -1vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-header .video-overlay {
+    margin-top: -1vh;
+  }
+}
+
+.container .cell-header .video-overlay .video-bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  margin-top: 0;
+  opacity: 70%;
+  position: relative;
+  width: 100%;
+  z-index: 0;
 }
 
 .container .cell-post-1 {
@@ -174,6 +294,20 @@ p {
   margin: 1vh;
   height: 30vh;
   width: 30vh;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-post-1 video {
+    height: 15vh;
+    width: 15vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-post-1 video {
+    height: 19vh;
+    width: 19vh;
+  }
 }
 
 .container .cell-post-2 {
@@ -190,6 +324,20 @@ p {
   margin: 0 1vh 0 1vh;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-post-2 img {
+    height: 10vh;
+    width: 10vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-post-2 img {
+    height: 10vh;
+    width: 10vh;
+  }
+}
+
 .container .cell-post-3 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -197,10 +345,34 @@ p {
   grid-area: newsletter;
 }
 
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-post-3 input[type=email] {
+    margin: 1vh;
+  }
+}
+
 .container .cell-footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .cell-footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .container .cell-footer {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .container .cell-footer p {
+    position: relative;
+    left: 35%;
+  }
 }
 /*# sourceMappingURL=grid.css.map */
