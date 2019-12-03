@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.cell-header nav {
+  background: black;
+}
+
+.cell-header nav a {
+  font-weight: bolder;
+}
+
+.cell-header nav a:hover, .cell-header nav a:active {
+  color: gold;
+}
+
+.cell-post-1,
+.cell-post-2,
+.cell-post-3 {
+  border: dashed 0.15rem black;
+}
+
+.cell-post-1 video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: black;
+  border-radius: 99em;
+  overflow: hidden;
+}
+
+.cell-post-2 img {
+  border: solid 0.32rem white;
+  -webkit-box-shadow: 0 0 0 0.1rem black;
+          box-shadow: 0 0 0 0.1rem black;
+}
+
+.cell-post-3 input[type=email] {
+  padding: 0.5rem;
+  margin: 0 1rem 0 1rem;
+  background: black;
+  color: white;
+  font-weight: bolder;
+}
+
+.cell-post-3 input[type=submit] {
+  padding: 0.4rem;
+  background: white;
+  color: black;
+  border: solid 0.15rem black;
+  font-weight: bolder;
+}
+
+.cell-post-3 input[type=submit]:hover, .cell-post-3 input[type=submit]:focus {
+  background: black;
+  color: white;
+}
+
+.cell-footer {
+  padding: 2rem 0 2rem 0;
+  background: black;
+  color: white;
+  font-weight: bolder;
+}
+
+.cell-footer a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
 	.cell-post-1,
 	.cell-post-2,
 	.cell-post-3 {
-		margin: 4vh 0 4vh 0;
+		margin: 1vh 0 8vh 0;
 		padding: 1vh;
 		text-align: center;
 	}
@@ -21,11 +21,13 @@
 	.cell-post-3 {
 		align-content: center;
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-direction: column;
+		flex-grow: 1;
 		height: 45vh;
 		padding: 10rem;
 		justify-content: center;
+		margin-left: 1rem;
+		margin-right: 1rem;
 
 		article {
 			align-content: center;
@@ -62,7 +64,7 @@ h4 {
 }
 p {
 	line-height: 4vh;
-	text-align: justify;
+	text-align: center;
 }
 
 .container {
@@ -116,7 +118,7 @@ p {
 			left: 11%;
 			position: relative;
 			top: 50%;
-			transform: translate(-50%, 60%);
+			transform: translate(-50%, 70%);
 			width: 55vh;
 			z-index: 2;
 		}
@@ -147,8 +149,9 @@ p {
 		grid-area: content;
 
 		video {
-			height: 21vh;
-			width: 21vh;
+			margin: 1vh;
+			height: 30vh;
+			width: 30vh;
 		}
 	}
 
@@ -156,8 +159,11 @@ p {
 		grid-area: main;
 
 		img {
-			height: auto;
-			width: 4vh;
+			
+			height: 20vh;
+			width: 20vh;
+			border-radius: 999em;
+			margin: 0 1vh 0 1vh;
 		}
 	}
 

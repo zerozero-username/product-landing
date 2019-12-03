@@ -28,7 +28,7 @@ h4 {
 
 p {
   line-height: 4vh;
-  text-align: justify;
+  text-align: center;
 }
 
 .container {
@@ -52,7 +52,7 @@ p {
 .container .cell-post-1,
 .container .cell-post-2,
 .container .cell-post-3 {
-  margin: 4vh 0 4vh 0;
+  margin: 1vh 0 8vh 0;
   padding: 1vh;
   text-align: center;
 }
@@ -65,17 +65,20 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 45vh;
   padding: 10rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .container .cell-post-1 article,
@@ -132,8 +135,8 @@ p {
   left: 11%;
   position: relative;
   top: 50%;
-  -webkit-transform: translate(-50%, 60%);
-          transform: translate(-50%, 60%);
+  -webkit-transform: translate(-50%, 70%);
+          transform: translate(-50%, 70%);
   width: 55vh;
   z-index: 2;
 }
@@ -168,8 +171,9 @@ p {
 }
 
 .container .cell-post-1 video {
-  height: 21vh;
-  width: 21vh;
+  margin: 1vh;
+  height: 30vh;
+  width: 30vh;
 }
 
 .container .cell-post-2 {
@@ -180,8 +184,10 @@ p {
 }
 
 .container .cell-post-2 img {
-  height: auto;
-  width: 4vh;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 999em;
+  margin: 0 1vh 0 1vh;
 }
 
 .container .cell-post-3 {
