@@ -37,6 +37,8 @@ p {
 			font-weight: bolder;
 
 			a {
+				@include hover();
+
 				font-size: 1.25rem;
 				color: $accent-a;
 
@@ -98,6 +100,8 @@ p {
 	}
 
 	input[type=submit] {
+		@include hover();
+
 		padding: 0.4rem;
 		background: $bg-color;
 		color: $accent-a;
@@ -123,6 +127,8 @@ p {
 	}
 
 	a {
+		@include hover();
+
 		color: $accent-c;
 
 		&:hover {

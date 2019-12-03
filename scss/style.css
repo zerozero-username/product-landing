@@ -22,8 +22,15 @@ p {
 }
 
 .cell-header .nav-bar ul li a {
+  -webkit-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
   font-size: 1.25rem;
   color: #654f3b;
+}
+
+.cell-header .nav-bar ul li a:hover {
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
 }
 
 .cell-header .nav-bar ul li a:hover, .cell-header .nav-bar ul li a:active {
@@ -76,11 +83,18 @@ p {
 }
 
 .cell-post-3 input[type=submit] {
+  -webkit-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
   padding: 0.4rem;
   background: #eddfb0;
   color: #654f3b;
   border: solid 0.15rem #654f3b;
   font-weight: bolder;
+}
+
+.cell-post-3 input[type=submit]:hover {
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
 }
 
 .cell-post-3 input[type=submit]:hover, .cell-post-3 input[type=submit]:focus {
@@ -100,7 +114,14 @@ p {
 }
 
 .cell-footer a {
+  -webkit-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
   color: #c57b57;
+}
+
+.cell-footer a:hover {
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
 }
 
 .cell-footer a:hover {
